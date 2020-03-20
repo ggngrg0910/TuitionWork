@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>java script </title>
+<script>
+function my()
+{
+x=document.getElementById("aa").value;     		 // HTML data pass in javascript (for store in js)
+document.getElementById("rs").innerHTML=x;		// javascript data pass in HTML (for display on browser)
+ }
+</script>
+</head>
+
+<body>
+<p id="rs"></p>
+
+<input type="text" id="aa">   							
+<button onclick="my()">click me</button>
+
+</body>	
+</html>

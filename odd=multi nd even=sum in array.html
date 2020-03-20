@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+var x=[2,4,3,6,8];
+var y=x.length;
+var sum=0;
+var multi=1;
+for(i=0; i<y; i++)
+{
+if(x[i]%2==0)
+{
+sum=sum+x[i];
+}}
+document.write("Given Array : "+x);
+document.write("<br>");
+document.write("Sum of Even Numbers : "+sum);
+document.write("<br>");
+for(i=0; i<y; i++)
+{
+if(x[i]%2!=0)
+{
+multi=multi*x[i];
+}}document.write("Multiplication of Odd Numbers : "+multi);
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+/*var current= new Date();
+var  currentday =current.getDay();
+document.write(currentday);*/
+document.write("Current Date"+"<br>");
+	
+	var current= new Date();
+	var day = current.getDay();
+	document.write("Current Day = "+day+"<br>");
+
+	var month=current.getMonth();
+	document.write("Current Month = "+month+"<br>");
+
+	var year=current.getFullYear();
+	document.write("Current Year = "+year+"<br>");
+	document.write("<br>");
+
+	document.write("Date Of Birth of Candidate"+"<br>");
+
+	var x= prompt("Enter your DOB format is dd/mm/yyyy");
+	document.write("Day   = "+x.substring(0,2)+"<br>");
+	document.write("Month = "+x.substring(3,5)+"<br>");
+	document.write("Year  = "+x.substring(6,10)+"<br>");
+	document.write("<br>");
+
+	document.write("Substraction DOB from Current date"+"<br>");
+
+	var a= x.substring(0,2)-day;
+	var y= x.substring(3,5)-month;
+	var z= x.substring(6,10)-year;
+
+	document.write("Day = "+a+"<br>");
+	document.write("Month = "+y+"<br>");
+	document.write("Year = "+z+"<br>");
+
+</script>
+</head>
+<body>
+</body>      
+</html>
+

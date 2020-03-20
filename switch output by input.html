@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function my()
+{
+ x=document.getElementById("dd").value;
+ document.getElementById("ee").innerHTML=x;
+
+switch(x)
+{
+ case "one":
+ document.write("HTML"+"<br>");	
+ break; 
+ 
+ case "two":
+ document.write("JAVA SCRIPT"+"<br>");
+ break; 
+ 
+ case "three":
+ document.write("CASCADING STYLE SHEET (CSS)"+"<br>");
+ break; 
+ 
+ default:
+ document.write("WRONG INPUT"+"<br>");
+}
+}
+
+</script>
+</head>
+
+<body>
+<p id="ee"></p>
+<input type="text" id="dd">
+<button onclick="my()">click</button>
+</body>	
+</html>

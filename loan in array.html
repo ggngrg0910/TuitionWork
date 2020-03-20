@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function my()
+{
+	var a=parseInt(prompt("Enter Your Loan Amount"));
+	
+		var b=confirm("kya app loan lena chahte hoo");
+		if(b)
+		{
+			var c= parseInt(prompt("apki salary kitni hai"));
+			
+				var d=(c*30/100)+c;
+				if(d>a)
+				{
+					alert("mil jaye ga");
+				}
+				else
+				{
+					alert("Umeed mat lgake baitho");
+				}
+			
+		}
+		else
+		{
+			alert("jb jrurt ho tb le lena, bbie");
+		}
+}
+</script>
+</head>
+<body>
+<button onclick="my()">click me</button>
+</body>
+</html>

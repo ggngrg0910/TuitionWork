@@ -1,0 +1,45 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+
+  <script>
+  document.write("<h1>Input Fields</h1><br>")
+  
+ $(document).ready(function()
+    {    
+       $("#aa").click(function()
+	    { 
+		 $("#txt").show();
+		 
+		});});
+		
+  $(document).ready(function()
+    {    
+       $("#bb").click(function()
+	    { 
+		 $("#txt").hide();  
+		 
+		});});
+		
+		
+  $(document).ready(function()
+	{    
+       $("#cc").click(function()
+	    { 
+		 $("#txt").toggle();  
+		 
+		});
+   
+   
+    });
+  </script>
+</head>
+<body>
+<input type="text" id="txt" placeholder="Text Input Box"><br><br>
+
+ <button id="aa">view</button>
+  <button id="bb">hide</button>
+   <button id="cc">toggle</button>
+ 
+</body>
+</html>

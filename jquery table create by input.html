@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function()
+    {   
+		
+       $("#btn").click(function()
+	    { 
+		var x= $("#txt1").val;
+		var y= $("#txt2").val;
+		document.write("<table border>");
+		
+			for(i=0;i<x;i++)
+			{
+				document.write("<tr>");
+				for(q=0;q<y;q++)
+				{
+				document.write("<td>");
+				document.write("</td></tr>");
+				}
+			}document.write("</table>");	
+		});
+		
+	
+	});
+
+</script>
+</head>
+<body>
+Rows : <input type="text"id="txt1">					<br>
+Columns : <input type="text"id="txt2">					<br><br>
+<button id="btn">Create Table</button>
+
+</body>
+</html>

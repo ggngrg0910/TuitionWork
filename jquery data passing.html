@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+
+  <script>
+ $(document).ready(function()
+    {  
+      $("#btn").click(function(){
+      var data= $("#txt").val();
+	  document.getElementById("rr").innerHTML=data;
+		 
+		
+   });
+   
+    });
+	
+  </script>
+</head>
+<body>
+Name<input type="text"id="txt">
+ <button id="btn">view</button>
+ 
+<p id="rr"></p>
+
+
+
+</body>
+</html>
