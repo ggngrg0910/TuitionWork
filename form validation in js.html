@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+function validate()
+{																
+var ab=document.getElementById("aa").value;
+var cd=document.getElementById("bb").value;
+//document.write(ab+"<br>");
+//document.write(cd);
+if(ab=="")
+{
+document.getElementById("res").innerHTML="Plz Enter Username";
+}
+else
+{
+document.getElementById("res").innerHTML="";
+}
+if(cd.length<6)
+{
+document.getElementById("ser").innerHTML="Plz increse length";
+}else
+{
+document.getElementById("ser").innerHTML="";
+}
+}
+</script>
+</head>
+<body>
+<form action="" method="post">
+Username : <input type="text" placeholder="Enter Your Name" id="aa" name="username"><br>
+<p id="res"></p>
+Password : <input type="password" placeholder="Enter Your Password" id="bb" name="password"><br>
+<p id="ser"></p>
+<button type="button" onclick="validate()">Submit</button>						<br>
+
+
+
+</form>
+</body>      
+</html>
+
