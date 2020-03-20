@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+var product= new Array();
+function addproduct()
+{
+var itemname=document.getElementById("m").value;
+product.push(itemname);
+document.getElementById("m").value="";
+document.getElementById("res").innerHTML="Product Add";
+}
+function viewproduct()
+{
+document.write("<table border> <tr> <th>");
+document.write("S.No </th> <th> Product Name </th </tr>");
+for(i=0; i<product.length; i++)
+{
+document.write("<tr> <td>"+(i+1)+"</td>");
+document.write("<td>" +product[i]+"</td> </tr>");
+}
+document.write("</table>");
+}
+
+</script>
+</head>
+<body>
+Product<input type="text" id="m">  <br>
+<p id="res"></p>
+<button onclick="addproduct()">Add</button> <br>
+<button onclick="viewproduct()">View Product List</button>
+</body>
+</html>
+

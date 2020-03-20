@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="angularfile.js"></script>
+<script>
+var myapp=angular.module("app",[]);
+
+	myapp.controller("first",function($scope){   //("controller name",function(){});
+	
+								$scope.title="welcome my app";									
+								$scope.count=0;
+								$scope.mydata=function(){
+														$scope.count++;
+														$scope.title="welcome my app2";}});	
+	
+</script>
+</head>
+<body ng-app="app">
+<div ng-controller="first">
+{{title}}
+<button ng-click="mydata()">click</button>
+{{count}}
+</div>
+</body>
+</html>

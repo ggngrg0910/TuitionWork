@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="angularfile.js"></script>
+<script>
+var myapp=angular.module("app",[]);
+
+	myapp.controller("first",function($scope){   //("controller name",function{});
+	
+								$scope.title="welcome my app";									
+									});	
+	
+</script>
+</head>
+<body ng-app="app">
+<div ng-controller="first">
+{{title}}
+</div>
+</body>
+</html>
